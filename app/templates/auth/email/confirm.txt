@@ -1,0 +1,8 @@
+Dear {{ user.username }},
+
+Welcome to UR2B!
+
+Please click on the following link to confirm your account:
+
+{{ url_for('auth.confirm', token=token, _external=True) }}
+

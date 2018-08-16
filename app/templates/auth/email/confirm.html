@@ -1,0 +1,5 @@
+<p>Dear {{ user.username }},</p>
+<p>Welcome to <b>UR2B</b>!</p>
+<p>Please <a href="{{ url_for('auth.confirm', token=token, _external=True) }}">click here</a>.</p>
+<p>Or copy address:</p>
+<p>{{ url_for('auth.confirm', token=token, _external=True) }}</p>
